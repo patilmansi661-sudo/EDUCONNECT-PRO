@@ -2,7 +2,11 @@ const express = require("express");
 const router = express.Router();
 
 const Post = require("../models/Post");
+
+// Import middleware
 const authMiddleware = require("../middleware/authMiddleware");
+
+console.log("authMiddleware loaded:", typeof authMiddleware);
 
 router.post("/create", authMiddleware,  async (req, res) => {
 
