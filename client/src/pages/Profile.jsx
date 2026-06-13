@@ -1,17 +1,28 @@
 function Profile() {
   return (
-    <div>
-      <h1>My Profile</h1>
+    <div className="container mt-5">
 
-      <p>Name: User Name</p>
+      <div className="card shadow-lg p-4">
 
-      <p>Email: user@gmail.com</p>
+        <h2 className="text-primary">
+          Mansi Patil
+        </h2>
 
-      <p>College: XYZ College</p>
+        <p>Computer Engineering Student</p>
 
-      <p>Skills: React, Node.js</p>
+        <hr />
 
-      <button>Edit Profile</button>
+        <h4>Skills</h4>
+
+        <ul>
+          <li>Java</li>
+          <li>MERN Stack</li>
+          <li>Cyber Security</li>
+          <li>MySQL</li>
+        </ul>
+
+      </div>
+
     </div>
   );
 }
